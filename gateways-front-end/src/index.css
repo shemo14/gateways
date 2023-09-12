@@ -1,0 +1,21 @@
+body, #root, .content{
+    min-height: 100vh;
+}
+.menuItem{
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    color: #000;
+    border-radius: 10px
+}
+.activeMenuItem{
+    background-color: #8d83f3;
+    color: #fff;
+}
+.menuItemIcon{
+    margin-right: 10px;
+    color: #000;
+}
+.activeMenuItemIcon{
+    color: #fff;
+}
