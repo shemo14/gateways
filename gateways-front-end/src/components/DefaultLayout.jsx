@@ -6,10 +6,11 @@ export default function DefaultLayout() {
     const [activePath, setActivePath] = useState('/gateways')
 
     const renderMenuItems = () => {
-        return MenuItems.map((item) => {
+        return MenuItems.map((item, i) => {
             const Icon = item.icon
             return (
                 <Link
+                    key={i}
                     onClick={() => setActivePath(item.path)}
                     className={`menuItem ${activePath === item.path ? 'activeMenuItem' : ''}`} to={item.path}
                 >

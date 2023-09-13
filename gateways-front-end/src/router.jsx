@@ -24,7 +24,7 @@ const router = createBrowserRouter([
                 element: <AddGateway />
             },
             {
-                path: '/update-gateway',
+                path: '/update-gateway/:id',
                 element: <UpdateGateway />
             },
             {
