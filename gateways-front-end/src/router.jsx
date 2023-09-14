@@ -5,6 +5,8 @@ import UpdateGateway from "./views/UpdateGateway/index.jsx";
 import NotFound from "./views/NotFound/index.jsx";
 import DefaultLayout from "./components/DefaultLayout.jsx";
 import Devices from "./views/Devices/index.jsx";
+import AddDevice from "./views/AddDevice/index.jsx";
+import UpdateDevice from "./views/UpdateDevice/index.jsx";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
             {
                 path: '/devices',
                 element: <Devices />
+            },
+            {
+                path: '/add-device',
+                element: <AddDevice />
+            },
+            {
+                path: '/update-device/:id',
+                element: <UpdateDevice />
             },
         ]
     },

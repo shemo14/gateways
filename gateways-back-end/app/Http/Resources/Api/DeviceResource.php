@@ -14,7 +14,8 @@ class DeviceResource extends JsonResource
             'description' => $this->description,
             'status' => (boolean)$this->status,
             'gateway_id' => $this->gateway_id,
-            'gateway' => $this->gateway->name
+            'gateway' => $this->gateway->name,
+            'created_at' => $this->created_at->format('Y-m-d H:i:s')
         ];
     }
 }

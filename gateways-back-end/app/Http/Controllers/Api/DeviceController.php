@@ -17,6 +17,10 @@ class DeviceController extends Controller
         return $this->response('success', '', DeviceResource::collection(Device::get()));
     }
 
+    public function device($id){
+        return $this->response('success', '', new DeviceResource(Device::findOrFail($id)));
+    }
+
     public function store_device(AddDeviceRequest $request){
         Device::create($request->validated());
         return $this->response('success', 'device added successfully');

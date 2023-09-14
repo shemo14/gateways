@@ -30,6 +30,7 @@ Route::delete('/delete-gateway/{id}', [GatewayController::class, 'delete_gateway
 
 // ======= Devices Routes =========
 Route::get('/devices', [DeviceController::class, 'devices']);
+Route::get('/device/{id}', [DeviceController::class, 'device']);
 Route::post('/store-device', [DeviceController::class, 'store_device']);
 Route::put('/update-device', [DeviceController::class, 'update_device']);
 Route::delete('/delete-device/{id}', [DeviceController::class, 'delete_device']);
